@@ -1,289 +1,281 @@
 INSERT INTO Customer
-(CustomerId, CustomerNumber, DTSBatchId, OrganizationId)
-VALUES (910000000000001002, 'CUST20260919164055001', 100, 18);
+(CustomerId, CustomerNumber, DTSBatchId, OrganizationId, FullName)
+VALUES (610000000000000000, 'CUST20260919164055001', 100, 18, 'Ishaan Sharma');
 
 INSERT INTO Customer
-(CustomerId, CustomerNumber, DTSBatchId, OrganizationId)
-VALUES (910000000000001003, 'CUST20260919164055002', 100, 18);
+(CustomerId, CustomerNumber, DTSBatchId, OrganizationId, FullName)
+VALUES (610000000000000001, 'CUST20260919164055002', 100, 18, 'Ishita Gowda');
 
 INSERT INTO Customer
-(CustomerId, CustomerNumber, DTSBatchId, OrganizationId)
-VALUES (910000000000001004, 'CUST20260919164055003', 100, 18);
+(CustomerId, CustomerNumber, DTSBatchId, OrganizationId, FullName)
+VALUES (610000000000000002, 'CUST20260919164055003', 100, 18, 'Riya Krishnan');
 
 INSERT INTO Customer
-(CustomerId, CustomerNumber, DTSBatchId, OrganizationId)
-VALUES (910000000000001005, 'CUST20260919164055004', 100, 18);
+(CustomerId, CustomerNumber, DTSBatchId, OrganizationId, FullName)
+VALUES (610000000000000003, 'CUST20260919164055004', 100, 18, 'Sai Naidu');
 
 INSERT INTO Customer
-(CustomerId, CustomerNumber, DTSBatchId, OrganizationId)
-VALUES (910000000000001006, 'CUST20260919164055005', 100, 18);
+(CustomerId, CustomerNumber, DTSBatchId, OrganizationId, FullName)
+VALUES (610000000000000004, 'CUST20260919164055005', 100, 18, 'Lakshmi Chopra');
 
 
 INSERT INTO Account
 (AccountId, AccountNumber, CustomerNumber, CustomerId, InternalAccountTypeId, DTSBatchId, OrganizationId)
-VALUES (910000000000001165, 'ACCT20260919164055001', 'CUST20260919164055001', 910000000000001002, 2001, 100, 18);
+VALUES (610000000000000000, 'ACCT20260919164055001', 'CUST20260919164055001', 610000000000000000, 2001, 100, 18);
 
 INSERT INTO Account
 (AccountId, AccountNumber, CustomerNumber, CustomerId, InternalAccountTypeId, DTSBatchId, OrganizationId)
-VALUES (910000000000001166, 'ACCT20260919164055002', 'CUST20260919164055002', 910000000000001003, 2001, 100, 18);
+VALUES (610000000000000001, 'ACCT20260919164055002', 'CUST20260919164055002', 610000000000000001, 2001, 100, 18);
 
 INSERT INTO Account
 (AccountId, AccountNumber, CustomerNumber, CustomerId, InternalAccountTypeId, DTSBatchId, OrganizationId)
-VALUES (910000000000001167, 'ACCT20260919164055003', 'CUST20260919164055003', 910000000000001004, 2001, 100, 18);
+VALUES (610000000000000002, 'ACCT20260919164055003', 'CUST20260919164055003', 610000000000000002, 2001, 100, 18);
 
 INSERT INTO Account
 (AccountId, AccountNumber, CustomerNumber, CustomerId, InternalAccountTypeId, DTSBatchId, OrganizationId)
-VALUES (910000000000001168, 'ACCT20260919164055004', 'CUST20260919164055004', 910000000000001005, 2001, 100, 18);
+VALUES (610000000000000003, 'ACCT20260919164055004', 'CUST20260919164055004', 610000000000000003, 2001, 100, 18);
 
 INSERT INTO Account
 (AccountId, AccountNumber, CustomerNumber, CustomerId, InternalAccountTypeId, DTSBatchId, OrganizationId)
-VALUES (910000000000001169, 'ACCT20260919164055005', 'CUST20260919164055005', 910000000000001006, 2001, 100, 18);
+VALUES (610000000000000004, 'ACCT20260919164055005', 'CUST20260919164055005', 610000000000000004, 2001, 100, 18);
 
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500001', 172621, TO_TIMESTAMP('2026-08-06 09:42:36', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500001', 65196, TO_TIMESTAMP('2026-08-14 08:25:56', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500002', 11556, TO_TIMESTAMP('2026-08-14 08:25:56', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500002', 37579, TO_TIMESTAMP('2026-08-11 20:03:33', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500003', 69196, TO_TIMESTAMP('2026-08-11 20:03:33', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500003', 178392, TO_TIMESTAMP('2026-08-05 23:24:55', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500004', 41579, TO_TIMESTAMP('2026-08-05 23:24:55', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500004', 23790, TO_TIMESTAMP('2026-08-27 11:23:53', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500005', 182392, TO_TIMESTAMP('2026-08-27 11:23:53', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500005', 111604, TO_TIMESTAMP('2026-08-29 15:58:25', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500006', 27790, TO_TIMESTAMP('2026-08-29 15:58:25', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500006', 8811, TO_TIMESTAMP('2026-08-02 13:01:46', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500007', 115604, TO_TIMESTAMP('2026-08-02 13:01:46', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500007', 58314, TO_TIMESTAMP('2026-08-05 13:09:46', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500008', 12811, TO_TIMESTAMP('2026-08-05 13:09:46', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500008', 133475, TO_TIMESTAMP('2026-08-12 07:04:10', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500009', 62314, TO_TIMESTAMP('2026-08-12 07:04:10', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500009', 7956, TO_TIMESTAMP('2026-08-30 05:24:09', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500010', 137475, TO_TIMESTAMP('2026-08-30 05:24:09', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500010', 53124, TO_TIMESTAMP('2026-08-28 05:53:52', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500011', 11956, TO_TIMESTAMP('2026-08-28 05:53:52', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500011', 110974, TO_TIMESTAMP('2026-08-27 10:54:10', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500012', 57124, TO_TIMESTAMP('2026-08-27 10:54:10', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001002, 'CUST20260919164055001', 910000000000001165, 'ACCT20260919164055001', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500012', 118757, TO_TIMESTAMP('2026-08-11 16:49:54', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000000, 'CUST20260919164055001', 610000000000000000, 'ACCT20260919164055001');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500013', 114974, TO_TIMESTAMP('2026-08-11 16:49:54', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500013', 42853, TO_TIMESTAMP('2026-08-01 07:34:17', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500014', 122757, TO_TIMESTAMP('2026-08-29 14:32:39', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500014', 90194, TO_TIMESTAMP('2026-08-21 12:22:53', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500015', 77926, TO_TIMESTAMP('2026-08-01 07:34:17', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500015', 41758, TO_TIMESTAMP('2026-08-14 11:44:36', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500016', 46853, TO_TIMESTAMP('2026-08-21 12:22:53', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500016', 89236, TO_TIMESTAMP('2026-08-11 10:51:31', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500017', 94194, TO_TIMESTAMP('2026-08-14 11:44:36', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500017', 25312, TO_TIMESTAMP('2026-08-05 23:05:00', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500018', 45758, TO_TIMESTAMP('2026-08-11 10:51:31', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500018', 26353, TO_TIMESTAMP('2026-08-19 10:38:50', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500019', 93236, TO_TIMESTAMP('2026-08-05 23:05:00', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500019', 91165, TO_TIMESTAMP('2026-08-18 10:14:28', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500020', 29312, TO_TIMESTAMP('2026-08-19 10:38:50', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500020', 70342, TO_TIMESTAMP('2026-08-30 07:23:30', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500021', 30353, TO_TIMESTAMP('2026-08-18 10:14:28', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500021', 192294, TO_TIMESTAMP('2026-08-03 02:37:24', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500022', 95165, TO_TIMESTAMP('2026-08-30 07:23:30', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500022', 141568, TO_TIMESTAMP('2026-08-23 07:16:07', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500023', 74342, TO_TIMESTAMP('2026-08-03 02:37:24', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500023', 100230, TO_TIMESTAMP('2026-08-07 01:25:58', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500024', 125435, TO_TIMESTAMP('2026-08-27 00:45:03', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500024', 145714, TO_TIMESTAMP('2026-08-04 19:48:31', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000001, 'CUST20260919164055002', 610000000000000001, 'ACCT20260919164055002');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500025', 37722, TO_TIMESTAMP('2026-08-19 09:01:28', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001003, 'CUST20260919164055002', 910000000000001166, 'ACCT20260919164055002', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500025', 163141, TO_TIMESTAMP('2026-08-31 12:25:06', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500026', 25656, TO_TIMESTAMP('2026-08-27 19:10:26', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500026', 152349, TO_TIMESTAMP('2026-08-18 13:20:07', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500027', 81854, TO_TIMESTAMP('2026-08-31 12:25:06', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500027', 185699, TO_TIMESTAMP('2026-08-10 08:01:56', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500028', 167141, TO_TIMESTAMP('2026-08-18 13:20:07', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500028', 13012, TO_TIMESTAMP('2026-08-04 09:02:15', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500029', 156349, TO_TIMESTAMP('2026-08-10 08:01:56', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500029', 76861, TO_TIMESTAMP('2026-08-12 01:31:14', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500030', 189699, TO_TIMESTAMP('2026-08-04 09:02:15', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500030', 62024, TO_TIMESTAMP('2026-08-04 20:57:51', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500031', 17012, TO_TIMESTAMP('2026-08-12 01:31:14', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500031', 100647, TO_TIMESTAMP('2026-08-05 21:40:30', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500032', 80861, TO_TIMESTAMP('2026-08-04 20:57:51', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500032', 119858, TO_TIMESTAMP('2026-08-14 11:51:45', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500033', 66024, TO_TIMESTAMP('2026-08-05 21:40:30', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500033', 96638, TO_TIMESTAMP('2026-08-31 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500034', 104647, TO_TIMESTAMP('2026-08-14 11:51:45', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500034', 98040, TO_TIMESTAMP('2026-08-08 21:30:20', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500035', 123858, TO_TIMESTAMP('2026-08-31 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500035', 55921, TO_TIMESTAMP('2026-08-18 05:55:13', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500036', 100638, TO_TIMESTAMP('2026-08-08 21:30:20', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001004, 'CUST20260919164055003', 910000000000001167, 'ACCT20260919164055003', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500036', 184977, TO_TIMESTAMP('2026-08-13 23:03:06', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000002, 'CUST20260919164055003', 610000000000000002, 'ACCT20260919164055003');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500037', 102040, TO_TIMESTAMP('2026-08-18 05:55:13', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500037', 45862, TO_TIMESTAMP('2026-08-31 19:48:11', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500038', 59921, TO_TIMESTAMP('2026-08-13 23:03:06', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500038', 192136, TO_TIMESTAMP('2026-08-26 22:19:05', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500039', 188977, TO_TIMESTAMP('2026-08-04 11:11:23', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500039', 43834, TO_TIMESTAMP('2026-08-12 21:13:31', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500040', 164680, TO_TIMESTAMP('2026-08-31 19:48:11', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500040', 100471, TO_TIMESTAMP('2026-08-23 10:34:19', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500041', 49862, TO_TIMESTAMP('2026-08-26 22:19:05', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500041', 168772, TO_TIMESTAMP('2026-08-14 02:30:43', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500042', 69175, TO_TIMESTAMP('2026-08-08 22:22:39', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500042', 58570, TO_TIMESTAMP('2026-08-28 00:53:36', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500043', 126178, TO_TIMESTAMP('2026-08-19 10:05:51', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500043', 15663, TO_TIMESTAMP('2026-08-16 17:49:00', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500044', 75765, TO_TIMESTAMP('2026-08-28 00:53:36', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500044', 9414, TO_TIMESTAMP('2026-08-12 02:51:37', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500045', 62570, TO_TIMESTAMP('2026-08-16 17:49:00', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500045', 106162, TO_TIMESTAMP('2026-08-16 07:31:45', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500046', 19663, TO_TIMESTAMP('2026-08-12 02:51:37', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500046', 18350, TO_TIMESTAMP('2026-08-13 23:56:26', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500047', 13414, TO_TIMESTAMP('2026-08-16 07:31:45', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500047', 149682, TO_TIMESTAMP('2026-08-11 05:48:46', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500048', 110162, TO_TIMESTAMP('2026-08-13 23:56:26', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500048', 56738, TO_TIMESTAMP('2026-08-16 06:37:34', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000003, 'CUST20260919164055004', 610000000000000003, 'ACCT20260919164055004');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500049', 22350, TO_TIMESTAMP('2026-08-11 05:48:46', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500049', 38452, TO_TIMESTAMP('2026-08-23 06:36:04', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500050', 153682, TO_TIMESTAMP('2026-08-16 06:37:34', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001005, 'CUST20260919164055004', 910000000000001168, 'ACCT20260919164055004', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500050', 37603, TO_TIMESTAMP('2026-08-13 20:36:27', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500051', 60738, TO_TIMESTAMP('2026-08-25 05:38:47', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500051', 196294, TO_TIMESTAMP('2026-08-12 23:20:30', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500052', 108712, TO_TIMESTAMP('2026-08-23 06:36:04', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500052', 142289, TO_TIMESTAMP('2026-08-28 06:02:28', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500053', 42452, TO_TIMESTAMP('2026-08-13 20:36:27', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500053', 196825, TO_TIMESTAMP('2026-08-13 18:06:58', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500054', 41603, TO_TIMESTAMP('2026-08-12 23:20:30', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500054', 113311, TO_TIMESTAMP('2026-08-29 09:05:31', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500055', 152159, TO_TIMESTAMP('2026-08-27 03:57:14', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500055', 105700, TO_TIMESTAMP('2026-08-29 07:51:54', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500056', 73876, TO_TIMESTAMP('2026-08-29 09:05:31', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500056', 58493, TO_TIMESTAMP('2026-08-18 13:45:23', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500057', 117311, TO_TIMESTAMP('2026-08-29 07:51:54', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500057', 134569, TO_TIMESTAMP('2026-08-07 17:10:05', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500058', 109700, TO_TIMESTAMP('2026-08-18 13:45:23', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500058', 24831, TO_TIMESTAMP('2026-08-24 22:59:15', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500059', 62493, TO_TIMESTAMP('2026-08-07 17:10:05', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500059', 29743, TO_TIMESTAMP('2026-08-03 06:53:40', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
 
 INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500060', 138569, TO_TIMESTAMP('2026-08-24 22:59:15', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
-
-INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500061', 28831, TO_TIMESTAMP('2026-08-03 06:53:40', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
-
-INSERT INTO transactions
-(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber, IsCashTransfer)
-VALUES ('TXN2026091916405500062', 33743, TO_TIMESTAMP('2026-08-08 10:04:22', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 910000000000001006, 'CUST20260919164055005', 910000000000001169, 'ACCT20260919164055005', 1);
+(TransactionNumber, Amount, TransactionDate, TransactionModeId, TransactionStatusId, DTSBatchId, OrganizationId, IsCashTransfer, BeneficiaryCustomerId, BeneficiaryCustomerNumber, BeneficiaryAccountId, BeneficiaryAccountNumber)
+VALUES ('TXN2026091916405500060', 165481, TO_TIMESTAMP('2026-08-08 10:04:22', 'YYYY-MM-DD HH24:MI:SS'), 2001, 1, 100, 18, 1, 610000000000000004, 'CUST20260919164055005', 610000000000000004, 'ACCT20260919164055005');
