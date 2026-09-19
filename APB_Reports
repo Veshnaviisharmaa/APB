@@ -1,0 +1,14 @@
+Report Name	Issue	Description
+STR Register	Download Failed	
+Alert Pending Analyst Rule (L1)	No data in the report whereas analyst user has pending alerts	
+STR Filings by Reason for Suspicion	Download Failed	
+STR Filings Rule-wise Period-wise Count	Download Failed	
+STR Filings ROS Month-wise	Download Failed	
+STR Filings RW Month-wise Count	Download Failed	
+Alert Pending CO Rules (L4)	No data yet	
+Analyst wise Open AML Alerts	No analyst name in the downloaded file	
+Alert Status I4C		
+Status of Unassigned Alerts	Need unassigned alerts for this	
+Alert Status I4C Count		
+STR Register		
+Alert Pending PO Rules (L2/L3)	No data yet	
